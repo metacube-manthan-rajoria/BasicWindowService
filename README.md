@@ -2,6 +2,12 @@
 
 This is a basic Windows Background Service Application
 
+Publish your Windows Service Application
+
+```bash
+dotnet publish -c Release -o ./publish
+```
+
 Register your service application to Services Control Manager
 
 ```bash
