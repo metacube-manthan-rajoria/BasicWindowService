@@ -2,6 +2,8 @@
 
 This is a basic Windows Background Service Application
 
+### How to Build
+
 Publish your Windows Service Application
 
 ```bash
