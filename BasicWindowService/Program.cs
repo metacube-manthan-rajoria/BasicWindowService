@@ -7,7 +7,7 @@ builder.Services.AddHostedService<Worker>();
 // Added Logger Configuration
 Log.Logger = 
             new LoggerConfiguration().MinimumLevel.Debug()
-            .WriteTo.File("logs/log - .txt", rollingInterval: RollingInterval.Day).CreateLogger();
+            .WriteTo.File(AppDomain.CurrentDomain.BaseDirectory + "logs/log - .txt", rollingInterval: RollingInterval.Day).CreateLogger();
 
 // Added logger to services
 builder.Logging.Services.AddSerilog();
